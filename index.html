@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--=== Coding by DevGenius -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+
+    <title>Typing Text Animation</title> 
+</head>
+<body>
+    <div class="container">
+        <span class="text first-text">I love</span>
+        <span class="text sec-text">chocolate</span>
+    </div>
+    <script>
+        const text = document.querySelector('.sec-text');
+
+        const textLoad = () => {
+            setTimeout(() => {
+                text.textContent = "chocolate";
+            }, 0);
+            setTimeout(() => {
+                text.textContent = "nature";
+            }, 4000);
+            setTimeout(() => {
+                text.textContent = "coffee";
+            }, 8000);
+            setTimeout(() => {
+                text.textContent = "movies";
+            }, 12000);
+            setTimeout(() => {
+                text.textContent = "books";
+            }, 16000);
+        }
+
+        textLoad();
+        setInterval(textLoad, 16000);
+        
+    </script>
+</body>
+</html>
